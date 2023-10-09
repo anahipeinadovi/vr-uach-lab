@@ -12,6 +12,7 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { CardModule } from 'primeng/card';
 import { HomeComponent } from './components/home/home.component';
 import { ContentPageComponent } from './components/content-page/content-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,8 @@ import { ContentPageComponent } from './components/content-page/content-page.com
     AppRoutingModule,
     MenubarModule,
     PanelMenuModule,
-    CardModule
-
+    CardModule,
+    HttpClientModule
 
   ],
   providers: [],

@@ -5,8 +5,9 @@ import { ContentPageComponent } from './components/content-page/content-page.com
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'content', component: ContentPageComponent}
+  {path: 'article/:id', component: ContentPageComponent},
+  {path: '', component: HomeComponent,pathMatch: 'full'},
+  {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({
