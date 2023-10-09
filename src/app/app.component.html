@@ -10,7 +10,7 @@
 <p-panelMenu [model]="menuItems2" [style]="{'width':'300px'}"></p-panelMenu> -->
 
 
-<div class="page" style="background-color: #F5F5F5; display: flex; flex-direction: column; height: 100vh;">
+<div class="page" style="background-color: #F5F5F5;">
   <div class="app-container">
     <!-- Barra de navegación (p-menubar) -->
     <p-menubar [model]="items">
@@ -18,13 +18,13 @@
         <img src="https://cimav.edu.mx/wp-content/uploads/2017/05/ingenieria-uach.png" height="90" class="mr-2" />
       </ng-template>
     </p-menubar>
-    <div style="display: flex; flex-grow: 1;">
+    <div class="row">
       <!-- Menú horizontal (p-panelMenu) -->
-      <div style="width: 300px; color: #fff; padding: 10px;">
+      <div class="col-auto">
         <p-panelMenu [model]="menuItems2"></p-panelMenu>
       </div>
       <!-- Contenido principal (router-outlet) -->
-      <div style="flex-grow: 1; padding: 20px;">
+      <div class="col">
         <router-outlet></router-outlet>
       </div>
     </div>
