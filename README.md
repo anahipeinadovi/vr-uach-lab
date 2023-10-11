@@ -1,27 +1,47 @@
-# Paginaservicio
+# Virtual Reality Laboratory Social Service Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+This is a implementation of a web page made with `Angular`, to document the projets made in the social service of the `UACH VR Laboratory`.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [node](https://nodejs.org/es)
 
-## Code scaffolding
+- [npm](https://www.npmjs.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [angular](https://angular.io/)
 
-## Build
+## Installing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
 
-## Running unit tests
+```
+$ git clone git@github.com:anahipeinadovi/anahipeinadovi.github.io.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Install dependencies, in the terminal write the following command:
 
-## Running end-to-end tests
+```
+$ npm install 
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Running
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Projects
+
+
+
+### Project 1
+
+
+
+## Authors
+
+- **Anahi Peinado Villalobos** [anahipeinadovi](https://github.com/anahipeinadovi)
+
+- **Denzel Alexander Muñoz Santana** [Denzypaulito](https://github.com/Denzypaulito)
+
+- **Samuel Sánchez Tarango** [Taimander](https://github.com/Taimander)
+
+- **Juan Antonio Díaz Fernández** [Fuan200](https://github.com/Fuan200)
