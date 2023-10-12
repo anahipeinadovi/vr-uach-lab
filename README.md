@@ -26,7 +26,13 @@ $ npm install
 
 ### Running
 
+1. On the root project's folder, write the next command:
 
+```
+$ ng serve
+```
+
+2. Open a browser and navigate to http://127.0.0.1:4200 to view the website.
 
 ## Projects
 
@@ -38,10 +44,12 @@ $ npm install
 
 ## Authors
 
-- **Anahi Peinado Villalobos** [anahipeinadovi](https://github.com/anahipeinadovi)
+- **Anahi Peinado Villalobos** - [anahipeinadovi](https://github.com/anahipeinadovi)
 
-- **Denzel Alexander Muñoz Santana** [Denzypaulito](https://github.com/Denzypaulito)
+- **Denzel Alexander Muñoz Santana** - [Denzypaulito](https://github.com/Denzypaulito)
 
-- **Samuel Sánchez Tarango** [Taimander](https://github.com/Taimander)
+- **Samuel Sánchez Tarango** - [Taimander](https://github.com/Taimander)
 
-- **Juan Antonio Díaz Fernández** [Fuan200](https://github.com/Fuan200)
+- **Juan Antonio Díaz Fernández** - [Fuan200](https://github.com/Fuan200)
+
+:blue_heart:
