@@ -2,6 +2,8 @@
 
 This is a implementation of a web page made with `Angular`, to document the projets made in the social service of the `UACH VR Laboratory`.
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+
 ## Table of Contents
 
 - [Prerequsites](#prerequisites)
@@ -32,7 +34,7 @@ $ git clone git@github.com:anahipeinadovi/anahipeinadovi.github.io.git
 $ npm install 
 ```
 
-### Running
+## Running
 
 1. On the root project's folder, write the next command:
 
@@ -40,7 +42,19 @@ $ npm install
 $ ng serve
 ```
 
-2. Open a browser and navigate to http://127.0.0.1:4200 to view the website.
+2. Open a browser and navigate to `http://127.0.0.1:4200` for a dev server.
+
+### Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+### Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+### Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Projects
 
@@ -52,12 +66,10 @@ $ ng serve
 
 ## Authors
 
-- **Anahi Peinado Villalobos** - [anahipeinadovi](https://github.com/anahipeinadovi)
+:blue_heart: **Anahi Peinado Villalobos** - [anahipeinadovi](https://github.com/anahipeinadovi)
 
-- **Denzel Alexander Muñoz Santana** - [Denzypaulito](https://github.com/Denzypaulito)
+:blue_heart: **Denzel Alexander Muñoz Santana** - [Denzypaulito](https://github.com/Denzypaulito)
 
-- **Samuel Sánchez Tarango** - [Taimander](https://github.com/Taimander)
+:blue_heart: **Samuel Sánchez Tarango** - [Taimander](https://github.com/Taimander)
 
-- **Juan Antonio Díaz Fernández** - [Fuan200](https://github.com/Fuan200)
-
-:blue_heart:
+:blue_heart: **Juan Antonio Díaz Fernández** - [Fuan200](https://github.com/Fuan200)
