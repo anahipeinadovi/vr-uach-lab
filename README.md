@@ -2,6 +2,14 @@
 
 This is a implementation of a web page made with `Angular`, to document the projets made in the social service of the `UACH VR Laboratory`.
 
+## Table of Contents
+
+- [Prerequsites](#prerequisites)
+- [Installing](#installing)
+- [Running](#running)
+- [Projects](#projects)
+- [Authors](#authors)
+
 ## Prerequisites
 
 - [node](https://nodejs.org/es)
