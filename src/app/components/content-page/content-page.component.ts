@@ -18,6 +18,7 @@ export class ContentPageComponent implements OnInit {
     this.http.get(this.defaultUrl + this.name,{responseType:'text'}).subscribe({
       next:(res) => {
         this.content = res.toString();
+        alert(this.content);
       }
     })
   }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -6,83 +7,62 @@ import { MenuItem } from 'primeng/api';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     title = 'paginaservicio';
+
+    url = "https://raw.githubusercontent.com/Fuan200/info_web_site/main/index.json";
+
+    constructor(private http:HttpClient){}
 
     items: MenuItem[] | undefined;
   
     menuItems2: MenuItem[] | undefined;
   
     ngOnInit() {
-        this.items = [
-            {
-                label: 'Inicio',
-                icon: 'pi pi-fw pi-home',
-            },
-            {
-                label: 'Desarrollo VR',
-                icon: 'pi pi-fw pi-desktop',
-            },
-            {
-                label: 'Proyectos',
-                icon: 'pi pi-fw pi-pencil',
-            },
-            {
-                label: 'Nosotros',
-                icon: 'pi pi-fw pi-user',
-            },
-        ];
-  
-  
-        this.menuItems2 = [
-          {
-              label: 'Inicio',
-              icon: 'pi pi-fw pi-home',
-              items: [
-                  {
-                      label: '¿Qué es VR?'
-                  },
-                  {
-                      label: 'Unity'
-                  },
-                  {
-                      label: 'Gafas de Realidad virtual'
-                  }
-              ]
-          },
-          {
-              label: 'Desarrollo VR',
-              icon: 'pi pi-fw pi-desktop',
-              items: [
-                  {
-                      label: 'Curso Unity'
-                  },
-                  {
-                      label: 'Herramientas'
-                  },
-                  {
-                      label: 'Cuidados-salud-servicio de seguridad'
-                  }
-              ]
-          },
-          {
-              label: 'Proyectos',
-              icon: 'pi pi-fw pi-pencil',
-              items: [
-                  {
-                      label: 'Proy 1 Carro'
-                  }
-              ]
-          },
-          {
-              label: 'Nosotros',
-              icon: 'pi pi-fw pi-user',
-              items: [
-                  {
-                      label: 'Creadores proy 1'
-                  }
-              ]
-          }
-      ];
-    }
+        this.http.get(this.url,{responseType:'text'}).subscribe({
+            next:(res:string) => {
+              let resObj = JSON.parse(res);
+
+              this.items = [];
+              this.menuItems2 = [];
+   
+
+              resObj.forEach((i:any) => {
+                
+                this.items?.push({
+                    label: i.name,
+                    icon: i.icon
+                });
+                let mitems: MenuItem[] = [];
+                i.subtopics.forEach((el: any) => {
+                  mitems.push({
+                    label: el.name,
+                    url: el.url
+                  });
+                });
+                
+                this.menuItems2?.push({
+                  label: i.name,
+                  icon: i.icon,
+                  items: mitems
+                });
+                
+
+            });
+
+
+            
+
+
+
+
+            }
+          });
+        }
+
+
+
+
+
+    
 }
