@@ -1,27 +1,75 @@
-# Paginaservicio
+# Virtual Reality Laboratory Social Service Website
+
+This is a implementation of a web page made with `Angular`, to document the projets made in the social service of the `UACH VR Laboratory`.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Prerequsites](#prerequisites)
+- [Installing](#installing)
+- [Running](#running)
+- [Projects](#projects)
+- [Authors](#authors)
 
-## Code scaffolding
+## Prerequisites
+
+- [node](https://nodejs.org/es)
+
+- [npm](https://www.npmjs.com/)
+
+- [angular](https://angular.io/)
+
+## Installing
+
+1. Clone the repository:
+
+```
+$ git clone git@github.com:anahipeinadovi/anahipeinadovi.github.io.git
+```
+
+2. Install dependencies, in the terminal write the following command:
+
+```
+$ npm install 
+```
+
+## Running
+
+1. On the root project's folder, write the next command:
+
+```
+$ ng serve
+```
+
+2. Open a browser and navigate to `http://127.0.0.1:4200` for a dev server.
+
+### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Projects
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Project 1
+
+
+
+## Authors
+
+:blue_heart: **Anahi Peinado Villalobos** - [anahipeinadovi](https://github.com/anahipeinadovi)
+
+:blue_heart: **Denzel Alexander Muñoz Santana** - [Denzypaulito](https://github.com/Denzypaulito)
+
+:blue_heart: **Samuel Sánchez Tarango** - [Taimander](https://github.com/Taimander)
+
+:blue_heart: **Juan Antonio Díaz Fernández** - [Fuan200](https://github.com/Fuan200)
