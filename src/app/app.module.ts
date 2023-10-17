@@ -13,14 +13,12 @@ import { CardModule } from 'primeng/card';
 import { HomeComponent } from './components/home/home.component';
 import { ContentPageComponent } from './components/content-page/content-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContentPageComponent,
-    ContentComponent
+    ContentPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-home',
