@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ContentPageComponent } from './content-page.component';
 
 describe('ContentPageComponent', () => {
