@@ -1,35 +1,33 @@
-<!-- Dentro de app-home.component.html -->
-<div class="centered-image mb-2" style="text-align: center;">
-    <img
-      src="https://www.obicex.es/sites/obicex/files/styles/blog_desktop/public/images/blog/que-son-las-gafas-realidad-virtual.jpg?itok=HYaGdYZp"
-      alt="Imagen centrada" style="max-width: 100%; height: auto;">
-  </div>
-
-  
+ 
   <!-- Dentro de app-home.component.html -->
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xxl-1 g-4 mb-4">
-
-    <div class="col" style="margin-top: 20px;margin-right: 20px;">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">¿Qué es la realidad virtual? Prueba **************************</h5>
-          <p class="card-text">La realidad virtual (RV) es una tecnología que permite a los usuarios sumergirse en
-            un entorno simulado generado por computadora.</p>
-          <p> A través de dispositivos específicos, como gafas de realidad virtual, auriculares y controladores,
-            los usuarios pueden experimentar una sensación de presencia </p>
-          <p>en un mundo digital tridimensional. Aquí tienes una descripción más detallada de la realidad virtual:
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-2 g-8">
-    <div class="col">
+  <div class="mb-4">
+    <div>
 
       <div class="card flex justify-content-center">
-        <p-card header="Unity" [style]="{ width: '590px'}">
+        <p-card header="¿Qué es la realidad virtual?">
+          <ng-template pTemplate="header">
+            <img alt="Card"
+              src="https://www.obicex.es/sites/obicex/files/styles/blog_desktop/public/images/blog/que-son-las-gafas-realidad-virtual.jpg?itok=HYaGdYZp" />
+          </ng-template>
+          <p>
+            La realidad virtual (RV) es una tecnología que permite a los usuarios sumergirse en
+            un entorno simulado generado por computadora.
+          </p>
+          <p>
+            A través de dispositivos específicos, como gafas de realidad virtual, auriculares y controladores,
+            los usuarios pueden experimentar una sensación de presencia en un mundo digital tridimensional. 
+            Aquí tienes una descripción más detallada de la realidad virtual:
+          </p>
+
+        </p-card>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-2 g-8 mb-4">
+    <div class="col mb-4">
+
+      <div class="card flex justify-content-center">
+        <p-card header="Unity">
           <ng-template pTemplate="header">
             <img alt="Card"
               src="https://images.reporteindigo.com/wp-content/uploads/2023/09/unity-game-engine.png" />
@@ -58,7 +56,7 @@
     <div class="col">
 
       <div class="card flex justify-content-center">
-        <p-card header="Gafas de realidad Virtual" subheader="Oculus Quest 2" [style]="{ width: '590px' }">
+        <p-card header="Gafas de realidad Virtual" subheader="Oculus Quest 2">
           <ng-template pTemplate="header">
             <img alt="Card"
               src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/10/analisis-oculus-quest-2-2097915.jpg?tf=3840x" />

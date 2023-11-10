@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 /* styles.css */
-@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/themes/md-light-indigo/theme.css";
 @import "primeng/resources/primeng.css";
+.p-menuitem-text {
+    color: #000 !important;
+  }
+
+.p-panelmenu-header-action {
+   text-decoration: none !important;
+ }
+
+ .p-menuitem-link {
+    text-decoration: none !important;
+ }
+
+ .p-menubar-root-list {
+  margin-bottom: 0px !important;
+ }
+
+ @media screen and (max-width: 960px) {
+  .p-menubar .p-menubar-button {
+      display: none;
+ }
+}

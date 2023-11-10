@@ -1,34 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel = "stylesheet" type = "text/css" href = "content-page.component.css">
-</head>
-    <body>
-        <h1>Titulo</h1>
-        <div>
+<div>
+    <h1>{{content.title}}</h1>
+    <hr>
+    <div>
         <div class="row">
-            <p class="col">Descripcion</p>
-            <img class="col-auto me-3" style="width: 400px;" src="https://www.alstom.com/sites/alstom.com/files/2023/07/10/6.jpeg">
+            <p class="col-12">{{content.description}}</p>
+            <img *ngIf="content.photo_url" class="col-auto me-3" style="width: 400px;" src="{{content.photo_url}}">
         </div>
-        <div>
-            <h2>Subtema 1</h2>
-            <p>Descripcion</p>
+        <div class="div_margin" *ngFor="let item of content.subtopics">
+            <h2>{{item.title}}</h2>
+            <p *ngIf="item.description">{{item.description}}</p>
+            <div class="div_margin" *ngFor="let url of item.urls">
+                <a *ngIf="url.urlflag==true  " href="{{url.urlcontent}}" target="_blank">{{ url.urldescription }}</a>
+            </div>
+            <!-- <div class="div_margin" *ngFor="let item of content.subtopics.urls">
+
+            </div> -->
+            <!-- <a *ngIf="item.url==true" href="{{item.description}}" target="_blank">{{item.description}}</a>
+            <p *ngIf="!item.url">{{item.description}}</p> -->
         </div>
-        <div class = "div_margin">
-            <h2>Subtema 2</h2>
-            <p>Descripcion</p>
-        </div>
-        <div class = "div_margin">
-            <h2>Links</h2>
-            <a href = "https://facebook.com">Facebook</a>
-        </div>
-        <div class = "div_margin">
-            <h2>Subtema 3</h2>
-            <p>Descripcion</p>
-        </div>
-        </div>
-    </body>
-</html>
+    </div>
+</div>

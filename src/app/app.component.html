@@ -15,20 +15,24 @@
     <!-- Barra de navegación (p-menubar) -->
     <p-menubar [model]="items">
       <ng-template pTemplate="start">
+        <button class="btn btn-light me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasExample">
+          <i class="pi pi-bars"></i>
+        </button>
         <img src="https://cimav.edu.mx/wp-content/uploads/2017/05/ingenieria-uach.png" height="90" class="mr-2" />
       </ng-template>
     </p-menubar>
     
-    <div class="row">
-      <!-- Menú horizontal (p-panelMenu) -->
-      <div class="col-auto">
-        <p-panelMenu [model]="menuItems2"></p-panelMenu>
-      </div>
-      <!-- Contenido principal (router-outlet) -->
-      <div class="col">
-        <router-outlet></router-outlet>
-      </div>
+    <div class="container mt-2"> 
+      <router-outlet></router-outlet>
     </div>
-    <div class="advertising-test"></div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p-panelMenu [model]="menuItems2"></p-panelMenu>
   </div>
 </div>

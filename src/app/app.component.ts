@@ -14,6 +14,8 @@ export class AppComponent implements OnInit {
 
     constructor(private http:HttpClient){}
 
+    showMenu: boolean = false;
+
     items: MenuItem[] | undefined;
   
     menuItems2: MenuItem[] | undefined;
@@ -25,14 +27,15 @@ export class AppComponent implements OnInit {
 
               this.items = [];
               this.menuItems2 = [];
+
+              const firstItem = resObj[0];
+              this.items?.push({
+                  label: firstItem.name,
+                  icon: firstItem.icon
+              });
    
 
               resObj.forEach((i:any) => {
-                
-                this.items?.push({
-                    label: i.name,
-                    icon: i.icon
-                });
                 let mitems: MenuItem[] = [];
                 i.subtopics.forEach((el: any) => {
                   mitems.push({
