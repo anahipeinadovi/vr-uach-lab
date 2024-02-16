@@ -1,3 +1,31 @@
 .div_margin {
     margin-top: 50px;
 }
+
+
+/* Estilos de la imagen */
+.fixed-size-img {
+    width: 100%; /* Ancho para llenar el contenedor */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    object-fit: contain; /* Ajusta la imagen al contenedor manteniendo la relación de aspecto */
+    display: block; /* Para que el margin funcione correctamente */
+    margin-bottom: 10px; /* Espacio entre imágenes */
+}
+
+/* Estilos para el contenedor de la descripción */
+.image-container {
+    position: relative; /* Posición relativa para el contenedor */
+}
+
+/* Estilos para la descripción */
+.image-description {
+    text-align: center; /* Centrar el texto */
+}
+
+.card-title{
+    line-height: 1.6; /* Ajusta el espaciado entre líneas */
+    margin-bottom: 0; /* Elimina el espacio inferior entre párrafos */
+
+
+}
+

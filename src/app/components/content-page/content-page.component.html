@@ -9,7 +9,7 @@
         <div class="div_margin" *ngFor="let item of content.subtopics">
             <h2>{{item.title}}</h2>
             <p *ngIf="item.description">{{item.description}}</p>
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div *ngFor="let url of item.urls" class="col-3" style="margin-bottom: 20px;">
                         <div class="image-container" style="position: relative; display: flex; flex-direction: column; align-items: center;">
@@ -21,7 +21,90 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+<!-- 
+            <div class="container">
+                <div class="row">
+                    <div *ngFor="let url of item.urls" class="col-3" style="margin-bottom: 20px;">
+                        <div class="image-container" style="position: relative; display: flex; flex-direction: column; align-items: center;">
+                            <a *ngIf="url.urlflag" href="{{ url.urlcontent }}" target="_blank">{{ url.urldescription }}</a>
+                            <img *ngIf="!url.urlflag" class="me-3" style="width: 100%; height: 280px; object-fit: cover;" src="{{ url.urlcontent }}">
+                            <div *ngIf="!url.urlflag" class="image-text-container">
+                                <p class="image-text">{{ url.urldescription }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+             -->
+
+
+            <div *ngFor="let url of item.urls" class="col-3" style="margin-bottom: 20px;">
+            <a *ngIf="url.urlflag==true" href="{{ url.urlcontent }}" target="_blank">{{ url.urldescription }}</a>
+            </div>
+
+            <!-- <div class="container">
+                <div class="row">
+                    <div *ngFor="let url of item.urls" class="col-md-3">
+                        <div *ngIf="url.urlflag==false" class="card">
+                            <img class="card-img-top" src="{{ url.urlcontent }}" alt="FOTO">
+                            <div class="card-body">
+                                <p class="card-title">{{ url.urldescription }}</p>
+                                <p class="card-body">CARGO</p>
+                                <p class="card-body">INSTITUCIÓN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    Repite esta estructura para cada miembro del grupo
+                </div>
+            </div> -->
+
+
+
+            <!-- <div class="container">
+                <div class="row">
+                    <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
+                        <div *ngIf="!url.urlflag" class="card me-3 mb-4">
+                            <div class="image-container">
+                                <img class="fixed-size-img" src="{{ url.urlcontent }}" alt="FOTO">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">{{ url.urldescription }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!-- <div class="container">
+                <div class="row">
+                    <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
+                        <div *ngIf="!url.urlflag" >
+                                <img class="fixed-size-img" src="{{ url.urlcontent }}" alt="FOTO">
+                                <p class="card-title">{{ url.urldescription }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container">
+                <div class="row">
+                    <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
+                        <div  *ngIf="url.urlflag != true"     class="image-container">
+                            <img class="fixed-size-img" src="{{ url.urlcontent }}" alt="FOTO">
+                        </div>
+                        <div  *ngIf="url.urlflag != true" class="image-description mb-4">
+                            <p class="card-title">{{ url.urldescription }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        
             
             <!-- <div class="div_margin" *ngFor="let item of content.subtopics.urls">
 
