@@ -1,0 +1,70 @@
+<div style="margin-bottom: 50px;">
+    <h1>{{content.title}}</h1>
+        <hr>
+    <h3>{{content.subtitle_current_students}}</h3>
+    <hr>
+        <div>
+            <div class="row">
+                <p class="col-12" [innerHTML]="content.description_current_students"></p>
+                <img *ngIf="content.photo_url" class="col-auto me-3" style="width: 400px;" src="{{content.photo_url}}">
+            </div>
+            <div class="div_margin" *ngFor="let item of content.subtopics_new">
+                <h2>{{item.title}}</h2>
+                <p *ngIf="item.description">{{item.description}}</p>
+
+
+                <div *ngFor="let url of item.urls" class="col-3" style="margin-bottom: 20px;">
+                <a *ngIf="url.urlflag==true" href="{{ url.urlcontent }}" target="_blank">{{ url.urldescription }}</a>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
+                            <div  *ngIf="url.urlflag != true"     class="image-container">
+                                <img class="fixed-size-img" src="{{ url.urlcontent }}" alt="FOTO">
+                            </div>
+                            <div  *ngIf="url.urlflag != true" class="image-description mb-4">
+                                <p class="card-title">{{ url.urldescription }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <br>
+    <h3>{{content.subtitle_old_students}}</h3>
+    <hr>
+        <div>
+            <div class="row">
+                <p class="col-12" [innerHTML]="content.description_old_students"></p>
+                <img *ngIf="content.photo_url" class="col-auto me-3" style="width: 400px;" src="{{content.photo_url}}">
+            </div>
+            <div class="div_margin" *ngFor="let item of content.subtopics_old">
+                <h2>{{item.title}}</h2>
+                <p *ngIf="item.description">{{item.description}}</p>
+
+
+                <div *ngFor="let url of item.urls" class="col-3" style="margin-bottom: 20px;">
+                <a *ngIf="url.urlflag==true" href="{{ url.urlcontent }}" target="_blank">{{ url.urldescription }}</a>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
+                            <div  *ngIf="url.urlflag != true"     class="image-container">
+                                <img class="fixed-size-img" src="{{ url.urlcontent }}" alt="FOTO">
+                            </div>
+                            <div  *ngIf="url.urlflag != true" class="image-description mb-4">
+                                <p class="card-title">{{ url.urldescription }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+</div>

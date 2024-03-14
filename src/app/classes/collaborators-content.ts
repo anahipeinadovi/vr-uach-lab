@@ -1,14 +1,12 @@
-
-export enum PageType {
-    ARTICLE, COLABORATORS
-}
-
 export class PageContent {
-    type !: PageType;
     title !: string;
-    description !: string;
+    subtitle_current_students !: string;
+    subtitle_old_students !: string;
+    description_current_students !: string;
+    description_old_students !: string;
     photo_url !: string;
-    subtopics !: Array<PageSubtopic>;
+    subtopics_new !: Array<PageSubtopic>;
+    subtopics_old !: Array<PageSubtopic>;
 }
 
 export class PageSubtopic {
