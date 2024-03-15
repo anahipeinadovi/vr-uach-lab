@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { PageContent } from 'src/app/classes/page-content';
@@ -8,19 +8,9 @@ import { PageContent } from 'src/app/classes/page-content';
   templateUrl: './content-page.component.html',
   styleUrls: ['./content-page.component.css']
 })
-export class ContentPageComponent implements OnInit {
+export class ContentPageComponent {
   defaultUrl = "https://raw.githubusercontent.com/Fuan200/info_web_site/main/";
   name:string|null = '';
-  content!: PageContent;
-  constructor(private route:ActivatedRoute, private http:HttpClient){}
+  @Input({required: true, alias: 'pageContent'}) content!: PageContent;
 
-  ngOnInit(): void {
-    this.name = this.route.snapshot.paramMap.get('id');
-    this.http.get(this.defaultUrl + this.name,{responseType:'text'}).subscribe({
-      next:(res) => {
-        this.content = JSON.parse(res);
-        //alert(this.content);
-      }
-    })
-  }
 }

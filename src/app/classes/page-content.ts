@@ -1,10 +1,10 @@
 
 export enum PageType {
-    ARTICLE, COLABORATORS
+    ARTICLE = "ARTICLE", COLLABORATORS = "COLLABORATORS"
 }
 
 export class PageContent {
-    type !: PageType;
+    type ?: PageType;
     title !: string;
     description !: string;
     photo_url !: string;

@@ -1,0 +1,2 @@
+<app-collaborators-page [pageContent]="content" *ngIf='content.type && content.type =="COLLABORATORS"'></app-collaborators-page>
+<app-content-page [pageContent]="content" *ngIf="!(content.type && content.type =='COLLABORATORS')"></app-content-page>
