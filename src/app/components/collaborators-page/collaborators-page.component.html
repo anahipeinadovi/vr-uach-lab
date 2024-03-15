@@ -17,8 +17,23 @@
                 <a *ngIf="url.urlflag==true" href="{{ url.urlcontent }}" target="_blank">{{ url.urldescription }}</a>
                 </div>
 
-
                 <div class="container">
+                    <div class="row">
+                        <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
+                            <div *ngIf="url.urlflag != true" class="image-container">
+                                <a [href]="url.urlpersonal" target="_blank">
+                                    <img class="fixed-size-img" src="{{ url.urlcontent }}" alt="FOTO">
+                                </a>
+                            </div>
+                            <div *ngIf="url.urlflag != true" class="image-description mb-4">
+                                <p class="card-title">{{ url.urldescription }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---<div class="container">
                     <div class="row">
                         <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
                             <div  *ngIf="url.urlflag != true"     class="image-container">
@@ -29,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     
@@ -50,8 +65,21 @@
                 <a *ngIf="url.urlflag==true" href="{{ url.urlcontent }}" target="_blank">{{ url.urldescription }}</a>
                 </div>
 
-
                 <div class="container">
+                    <div class="row">
+                        <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
+                            <div *ngIf="url.urlflag != true" class="image-container">
+                                <a [href]="url.urlpersonal" target="_blank">
+                                    <img class="fixed-size-img" src="{{ url.urlcontent }}" alt="FOTO">
+                                </a>
+                            </div>
+                            <div *ngIf="url.urlflag != true" class="image-description mb-4">
+                                <p class="card-title">{{ url.urldescription }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="container">
                     <div class="row">
                         <div *ngFor="let url of item.urls" class="col-md-3 col-sm-6">
                             <div  *ngIf="url.urlflag != true"     class="image-container">
@@ -62,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 
                 
             </div>

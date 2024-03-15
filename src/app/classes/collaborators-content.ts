@@ -22,4 +22,5 @@ export class CollaboratorsPageUrls{
     urlcontent!: string;
     urldescription !: string;
     urlflag!:boolean;
+    urlpersonal!:string;
 }

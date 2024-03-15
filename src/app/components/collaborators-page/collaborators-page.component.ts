@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { CollaboratorsPageContent } from 'src/app/classes/collaborators-content';
 
 @Component({
